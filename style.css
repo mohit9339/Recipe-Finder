@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    
+    
+}
+
+
+header {
+    background-color: #ff6347;
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+header button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #ff6347;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #ffebcd;
+}
+
+.background{
+    
+
+        background-image: url('background.jpg'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center; 
+        height: 100%;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 70%;
+        
+    
+
+}
+
+main {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+#recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 250px;
+    box-sizing: content-box;
+    justify-content: center;
+    
+}
+
+.recipe-card:hover {
+    transform: scale(1.09); 
+}
+
+.recipe-card img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.recipe-card h2 {
+    font-size: 1.5em;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-card h2 img{
+ height: 100px;
+ width: 100px;
+ object-fit: cover;
+ overflow: hidden;
+ justify-content: center;
+}
+
+.recipe-card p {
+    padding: 0 10px 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6347;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
